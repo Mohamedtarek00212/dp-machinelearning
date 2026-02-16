@@ -4,5 +4,11 @@ import pandas as pd
 st.title("⚙️ Machine Learning App")
 st.info("This is app builds a machine learning model")
 
-df = pd.read_excel("https://github.com/Mohamedtarek00212/dp-machinelearning/blob/master/penguins_cleaned.xlsx")
-df
+# الرابط الخام (Raw) للملف من جيت هاب
+url = "https://raw.githubusercontent.com/Mohamedtarek00212/dp-machinelearning/master/penguins_cleaned.xlsx"
+
+# قراءة الملف مباشرة من الرابط
+df = pd.read_excel(url)
+
+# عرض الداتا
+st.write(df)
